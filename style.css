@@ -1,0 +1,79 @@
+body {
+    background: #00091B;
+    color: #fff;
+    background: url(./img/school.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+@keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+  
+}
+
+@-webkit-keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+  
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+  
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+
+.dot {
+  color: #4FEBFE;
+}
+
+.detail{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    width: 62%;
+    height: 425px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 50px;
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 992px) {
+    .imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
