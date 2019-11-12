@@ -3,7 +3,7 @@ body {
     color: #fff;
     background: url(./img/school.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position-x: center;
 }
 
@@ -55,8 +55,18 @@ p{
 }
 
 img{
-    width: 62%;
+    width: 50%;
     height: 425px;
+}
+
+.imgs .img:first-child{
+    display: none;
+}
+
+.imgs .img:last-child{
+    position: absolute;
+    bottom: 24%;
+    right: 8%;
 }
 
 .imgs {
@@ -69,6 +79,22 @@ img{
 }
 
 @media screen and (min-width: 992px) {
+    body {
+        background-size: cover;
+    }
+
+    img{
+        width: 62%;
+    }
+
+    .imgs .img:first-child{
+        display: initial;
+    }
+
+    .imgs .img:last-child{
+        position: initial;
+    }
+
     .imgs {
         display: grid;
         grid-template-columns: 1fr 1fr;
